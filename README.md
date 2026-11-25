@@ -1,17 +1,3 @@
-# FinGuard — VS Code Setup
-
-For the shortest Windows setup, follow [VSCODE_GUIDE.md](VSCODE_GUIDE.md). Recommended runtime: **Python 3.11.x**.
-
-```powershell
-py -3.11 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-python -m streamlit run ui/app.py
-```
-Open http://localhost:8501. The frontend runs independently; start `backend/api.py` only if you need the REST API. Copy `.env.example` to `.env` to configure optional Gemini/Langfuse keys. Keep `.env` private.
-
----
 
 # FinGuard 🛡️
 ### *A Multi-Agent System That Tells You If You Can Actually Afford That Purchase*
